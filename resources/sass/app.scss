@@ -72,16 +72,31 @@ h1{
     #header_nav{
         height:80%;
         li{
-            a{
-                color: $fc_gray90;
-            }
             text-transform: uppercase;
             font-size: $fs_header;
             font-weight: 800;
-
+            color: $fc_gray90;
+            
             &.active, &:hover{
                 box-shadow: 0 -3px 0 $dc_primary inset;
             }
+            &:hover > a{
+                color: $dc_primary !important;
+            }
+        }
+        #header_search{
+            padding: 0;
+            border: none;
+            border-bottom: 2px solid $dc_primary;
+            display: inline-block;
+            &::placeholder{
+                text-align: end;
+                font-weight: 800;
+                color: $fc_gray90;
+            }
+        }
+        .searchbar > span {
+            border-bottom: 2px solid $dc_primary;
         }
     }
     ul, li {

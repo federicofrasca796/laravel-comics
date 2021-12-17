@@ -29,6 +29,11 @@
                     <li><a href="">News</a></li>
                     <li><a href="">Shop</a></li>
                 </ul>
+
+            </div>
+            <div class="col searchbar d-flex">
+                <input type="search" name="header_search" id="header_search" placeholder="Search">
+                <span><i class="fas fa-search"></i></span>
             </div>
         </nav>
     </div>
