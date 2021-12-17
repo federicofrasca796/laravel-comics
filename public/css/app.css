@@ -11399,3 +11399,61 @@ h1 {
 #main_1 .buy_info li a {
   padding: 1rem;
 }
+
+.comic_card img {
+  height: 160px;
+  width: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 1rem;
+}
+.comic_card .card_info {
+  text-transform: uppercase;
+}
+
+#site_footer .footer_links {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#site_footer .footer_links .container {
+  background: url("../img/dc-logo-bg.png") right center no-repeat;
+  background-size: 58%;
+}
+#site_footer .footer_links h2 {
+  color: #ffff;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+#site_footer .footer_links ul {
+  padding: 0;
+}
+#site_footer .footer_links li {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+#site_footer .cta_section {
+  height: 120px;
+  background: #303030;
+}
+#site_footer .cta_section, #site_footer .cta_section .container, #site_footer .cta_section ul {
+  display: flex;
+  align-items: center;
+}
+#site_footer .cta_section .container {
+  justify-content: space-between;
+}
+#site_footer .cta_section .btn {
+  color: #ffff;
+}
+#site_footer .cta_section ul li:first-child {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+#site_footer .cta_section ul li:first-child a {
+  color: #1E82F9;
+}

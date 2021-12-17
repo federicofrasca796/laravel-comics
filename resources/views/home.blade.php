@@ -12,9 +12,20 @@
                 </h1>
             </div>
             <div class="row d-flex">
+                @foreach ($comics as $comic)
+                    <div class="comic_card col-2 mb-5">
+                        <div class="text-center">
+                            <img src="{{$comic['thumb']}}" alt="">
+                        </div>
+                        <div class="card_info">
+                            {{$comic['title']}}
+                        </div>
+                    </div>
+                @endforeach
+
             </div>
 
-            <div class="align_center">
+            <div class="text-center">
                 <button class="btn btn_primary">
                     Load More
                 </button>
