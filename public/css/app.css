@@ -11350,3 +11350,52 @@ h1 {
   background-size: cover;
   background-position: top center;
 }
+
+#main_1 .current_series {
+  background: #1C1C1C;
+  color: #ffff;
+  padding: 3rem;
+}
+#main_1 .current_series .container {
+  position: relative;
+}
+#main_1 .current_series .title_tag {
+  position: absolute;
+  left: -1rem;
+  top: -5rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #1E82F9;
+  text-transform: uppercase;
+}
+#main_1 .current_series .row {
+  padding: 2rem 0;
+}
+#main_1 .current_series .btn {
+  padding: 0.7rem 4rem;
+  font-weight: 700;
+  margin: auto;
+}
+#main_1 .buy_info {
+  background: #1E82F9;
+}
+#main_1 .buy_info ul {
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+#main_1 .buy_info li, #main_1 .buy_info a {
+  color: white;
+  text-transform: uppercase;
+}
+#main_1 .buy_info li {
+  display: flex;
+  align-items: center;
+}
+#main_1 .buy_info li i {
+  width: 60px;
+  text-align: center;
+}
+#main_1 .buy_info li a {
+  padding: 1rem;
+}

@@ -114,6 +114,56 @@ background-size: cover;
 background-position: top center;
 }
 
-// MAIN
+// MAIN 1
+#main_1{
+        .current_series{
+            background: $bg_dark;
+            color: $fc_light;
+            padding: 3rem;
+            .container{
+                position: relative;
+            }
+            .title_tag{
+                position: absolute;
+                left: -1rem;
+                top: -5rem;
+                display: inline-block;
+                padding: .8rem 2rem;
+                background: $dc_primary;
+                text-transform: uppercase;
+            }
+            .row{
+                padding: 2rem 0;
+            }
+            .btn{
+                padding: .7rem 4rem;
+                font-weight: 700;
+                margin: auto;
+            }
+        }
+        .buy_info{
+            background: $dc_primary;
+            ul{
+                justify-content: space-around;
+                align-items: center;
+                padding: 2rem 0;
+            }
+            li, a{
+                color: white;
+                text-transform: uppercase;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                i{
+                    width: 60px;
+                    text-align: center;
+                }
+                a{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
 
 // FOOTER
