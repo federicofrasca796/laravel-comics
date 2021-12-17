@@ -1,10 +1,97 @@
 @use 'bootstrap';
 
 // Variables
-// $brand_color
+$dc_primary: #1E82F9;
+$bg_dark: #1C1C1C;
+$bg_gray: #303030;
+
+$fc_gray90: #464646;
+$fc_gray_light: #959595;
+$fc_light: #ffff;
+
+$fs_header: 1rem;
+$fs_footer_link: .9rem;
+
+$ends_height: 120px;
+
+//COMMON
+body{
+    font-family: 'Arial Narrow', sans-serif;
+    // font-family: "Greta Sans Condensed Bold","Greta Sans Bold",Arial,sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: $fc_gray_light;
+}
+nav li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+h1{
+    font-size: 1.5rem;
+}
+// .row{
+//     // margin: 0 -1.2rem;
+//     // padding: 2rem 0 4rem;
+//     // flex-wrap: wrap;
+// }
+.col{
+    padding: 0 1.2rem;
+}
+
+.btn {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.btn.btn_outline{
+    border: 2px solid $dc_primary;
+}
+.btn.btn_primary{
+    background: $dc_primary;
+    color: #fff;
+}
 
 // HEADER
+#site_header{
+    height: $ends_height;
+    background: #ffff;
+    .container{
+        justify-content: space-between;
+        height: 100%;
+    }
+    #top_banner{
+        height: 20%;
+        background-color: $dc_primary;
+        color: #fff;
+        font-size: .8rem;
+    }
+    #header_nav{
+        height:80%;
+        li{
+            a{
+                color: $fc_gray90;
+            }
+            text-transform: uppercase;
+            font-size: $fs_header;
+            font-weight: 800;
 
+            &.active, &:hover{
+                box-shadow: 0 -3px 0 $dc_primary inset;
+            }
+        }
+    }
+    ul, li {
+      display:flex;
+      height: 100%;
+      align-items: center;
+      margin: 0 1rem;
+    }
+    
+  }
 // MAIN
 
 // FOOTER
