@@ -11368,6 +11368,9 @@ h1 {
   background: #1E82F9;
   text-transform: uppercase;
 }
+#main_1 .current_series .title_tag h1 {
+  margin: 0;
+}
 #main_1 .current_series .row {
   padding: 2rem 0;
 }
@@ -11411,6 +11414,7 @@ h1 {
 }
 .comic_card .card_info {
   text-transform: uppercase;
+  color: #fff;
 }
 
 #site_footer .footer_links {

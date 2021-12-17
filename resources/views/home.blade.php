@@ -17,9 +17,9 @@
                         <div class="text-center">
                             <img src="{{$comic['thumb']}}" alt="">
                         </div>
-                        <div class="card_info">
+                        <a class="card_info" href="{{route('comic')}}">
                             {{$comic['title']}}
-                        </div>
+                        </a>
                     </div>
                 @endforeach
 
