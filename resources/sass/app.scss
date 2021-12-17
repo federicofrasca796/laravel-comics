@@ -56,7 +56,7 @@ h1{
 }
 
 // HEADER
-#site_header{
+#top_header{
     height: $ends_height;
     background: #ffff;
     .container{
@@ -106,7 +106,14 @@ h1{
       margin: 0 1rem;
     }
     
-  }
+}
+.jumbo{
+height: 350px;
+background-image: url('../img/jumbotron.jpg');
+background-size: cover;
+background-position: top center;
+}
+
 // MAIN
 
 // FOOTER
