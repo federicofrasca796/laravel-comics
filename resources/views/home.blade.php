@@ -3,7 +3,7 @@
 @section('page-title', 'Home')
 
 @section('main_content')
-<div id="main_1">
+<div id="main_comics">
     <div class="jumbo"></div>
 
     <section class="current_series">

@@ -2,6 +2,7 @@
 
 // Variables
 $dc_primary: #1E82F9;
+$dc_p_dark: #023F63;
 $bg_dark: #1C1C1C;
 $bg_gray: #303030;
 
@@ -109,8 +110,8 @@ background-size: cover;
 background-position: top center;
 }
 
-// MAIN 1
-#main_1{
+// MAIN "COMICS"
+#main_comics{
         .current_series{
             background: $bg_dark;
             color: $fc_light;
@@ -176,7 +177,46 @@ background-position: top center;
             text-transform: uppercase;
             color: #fff;
         }
+}
+
+//MAIN "SINGLE COMIC"
+#single_comic{
+    .comic_hero{
+        height: 50px;
+        background-color: $dc_primary;
+        position: relative;
+
+        .hero_wrapper{
+            position: absolute;
+            outline: 1px solid #fff;
+            left: inherit;
+            bottom: 20px;
+            .comic_type, .gallery_cta{
+                position: absolute;
+                color: #fff;
+                background-color: #00A9D9;
+                padding: 0 5px;
+            }
+            .gallery_cta{
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+            }
+        }
     }
+    .comic_info{
+        h2{
+            color: $dc_p_dark;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .buy_info{
+            background: #55BA59;
+            color: #fff;
+            padding: 1rem .5rem;
+        }
+    }
+}
 
 // FOOTER
 #site_footer{
