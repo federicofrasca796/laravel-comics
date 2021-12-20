@@ -4,6 +4,8 @@
 
 @section('main_content')
 <div id="main_1">
+    <div class="jumbo"></div>
+
     <section class="current_series">
         <div class="container">
             <div class="title_tag">

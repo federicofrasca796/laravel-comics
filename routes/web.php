@@ -19,11 +19,6 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name('home');
 
-Route::get('/comics', function () {
-
-    return view('comics');
-})->name('comics');
-
 Route::get('comics/{id}', function ($id) {
     $comics = config('comics');
     if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
