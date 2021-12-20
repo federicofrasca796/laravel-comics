@@ -3,8 +3,10 @@
 // Variables
 $dc_primary: #1E82F9;
 $dc_p_dark: #023F63;
+$dc_p_light: #00A9D9;
 $bg_dark: #1C1C1C;
 $bg_gray: #303030;
+$bg_lightgray: #F6F6F6;
 
 $fc_gray90: #464646;
 $fc_gray_light: #959595;
@@ -34,6 +36,9 @@ nav li{
 }
 h1{
     font-size: 1.5rem;
+}
+h5, h6{
+    font-weight: 800;
 }
 .col{
     padding: 0 1.2rem;
@@ -194,7 +199,7 @@ background-position: top center;
             .comic_type, .gallery_cta{
                 position: absolute;
                 color: #fff;
-                background-color: #00A9D9;
+                background-color: $dc_p_light;
                 padding: 0 5px;
             }
             .gallery_cta{
@@ -221,14 +226,53 @@ background-position: top center;
             color: $fc_gray90;
             font-weight: 500;
             line-height: 1.7rem;
+            font-size: 1.2rem;
         }
     }
     .adv{
         h5{
             font-weight: 800;
-            color: $fc_gray90;
-            text-transform: uppercase;
             text-align: end;
+            text-transform: uppercase;
+            color: $fc_gray90;
+        }
+    }
+    .comic_details{
+        border-top: 1px solid #e2e2e2;
+        background: $bg_lightgray;
+
+        h5{
+            margin-bottom: 2rem;
+        }
+        h5,h6{
+            color: $dc_p_dark;
+        }
+        .col-6 > .row{
+            &:first-of-type{
+                border-top: 1px solid #e2e2e2;
+            }
+            padding: .5rem 0;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        a {
+            font-weight: 800;
+            color: $dc_p_light;
+        }
+        p.col-8{
+            line-height: .9rem;
+        }
+    }
+    .widgets_links{
+        border-top: 1px solid #e2e2e2;
+        .col-3{
+            border-left: 1px solid #e2e2e2;
+            &:last-child{
+                border-right: 1px solid #e2e2e2;
+            }
+        }
+        a{
+            color: $fc_gray_light;
+            font-size: .9rem;
         }
     }
 }

@@ -11266,6 +11266,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+h5, h6 {
+  font-weight: 800;
+}
+
 .col {
   padding: 0 1.2rem;
 }
@@ -11455,12 +11459,50 @@ h1 {
   color: #464646;
   font-weight: 500;
   line-height: 1.7rem;
+  font-size: 1.2rem;
 }
 #single_comic .adv h5 {
   font-weight: 800;
-  color: #464646;
-  text-transform: uppercase;
   text-align: end;
+  text-transform: uppercase;
+  color: #464646;
+}
+#single_comic .comic_details {
+  border-top: 1px solid #e2e2e2;
+  background: #F6F6F6;
+}
+#single_comic .comic_details h5 {
+  margin-bottom: 2rem;
+}
+#single_comic .comic_details h5, #single_comic .comic_details h6 {
+  color: #023F63;
+}
+#single_comic .comic_details .col-6 > .row {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+#single_comic .comic_details .col-6 > .row:first-of-type {
+  border-top: 1px solid #e2e2e2;
+}
+#single_comic .comic_details a {
+  font-weight: 800;
+  color: #00A9D9;
+}
+#single_comic .comic_details p.col-8 {
+  line-height: 0.9rem;
+}
+#single_comic .widgets_links {
+  border-top: 1px solid #e2e2e2;
+}
+#single_comic .widgets_links .col-3 {
+  border-left: 1px solid #e2e2e2;
+}
+#single_comic .widgets_links .col-3:last-child {
+  border-right: 1px solid #e2e2e2;
+}
+#single_comic .widgets_links a {
+  color: #959595;
+  font-size: 0.9rem;
 }
 
 #site_footer .footer_links {

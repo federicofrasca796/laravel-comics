@@ -43,43 +43,83 @@
     </section>
 
     <section class="comic_details">
-        <div class="container">
-            <div class="row-cols-6">
-                <div class="col">
+        <div class="container py-5">
+            <div class="row gx-5">
+                <div class="col-6">
                     <h5>Talent</h5>
                     <div class="row">
-                        <div class="col-3">Art by:</div>
-                        <div class="col-8">
-                        @foreach ($comic['artists'] as $artist)
+                        <h6 class="col-3">Art by:</h6>
+                        <p class="col-8">
+                            @foreach ($comic['artists'] as $artist)
                             <a href="#">{{ $artist }}</a>
-                        @endforeach
-                        </div>
+                            @if(!$loop->last)
+                                ,
+                            @endif
+                            @endforeach
+                        </p>
                     </div>
                     <div class="row">
-                        <div class="col-3">Written by:</div>
-                        @foreach ($comic['writers'] as $writer)
+                        <h6 class="col-3">Written by:</h6>
+                        <p class="col-8">
+                            @foreach ($comic['writers'] as $writer)
                             <a href="#">{{ $writer }}</a>
-                        @endforeach
+                            @if(!$loop->last)
+                                ,
+                            @endif
+                            @endforeach
+                        </p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <h5>Specs</h5>
                     <div class="row">
-                        <div class="col-3">Series:</div>
+                        <h6 class="col-3">Series:</h6>
                         <div class="col-8">{{ $comic['series']}}</div>
                     </div>
                     <div class="row">
-                        <div class="col-3">U.S. Price: </div>
+                        <h6 class="col-3">U.S. Price: </h6>
                         <div class="col-8">{{ $comic['price']}}</div>
                     </div>
                     <div class="row">
-                        <div class="col-3">On Sale Date: </div>
+                        <h6 class="col-3">On Sale Date: </h6>
                         <div class="col-8">{{ $comic['sale_date']}}</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        {{-- <nav class="widgets_links mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <a href="">
+                            DIGITAL COMICS
+                            <img src="{{asset('img/cta-icons.png')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3 p-2">
+                        <a href="">
+                            SHOP DC
+                            <img src="{{asset('img/cta-icons.png')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3 p-2">
+                        <a href="">
+                            COMIC SHOP LOCATOR
+                            <img src="{{asset('img/cta-icons.png')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3 p-2">
+                        <a href="">
+                            SUBSCRIPTIONS
+                            <img src="{{asset('img/cta-icons.png')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav> --}}
     </section>
+
 </main>
 
 @endsection
