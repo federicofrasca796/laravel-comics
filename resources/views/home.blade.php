@@ -12,13 +12,13 @@
                 </h1>
             </div>
             <div class="row d-flex">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $index => $comic)
                     <div class="comic_card col-2 mb-5">
                         <div class="text-center">
                             <img src="{{$comic['thumb']}}" alt="">
                         </div>
-                        <a class="card_info" href="{{route('comic')}}">
-                            {{$comic['title']}}
+                        <a class="card_info" href="{{ route('comic', ['id' => $index]) }}">
+                            {{$comic['series']}}
                         </a>
                     </div>
                 @endforeach

@@ -18,6 +18,26 @@ Route::get('/', function () {
     // ddd($comics);
     return view('home', compact('comics'));
 })->name('home');
-Route::get('/single_comic', function () {
-    return view('single_comic');
+
+Route::get('/comics', function () {
+
+    return view('comics');
+})->name('comics');
+
+Route::get('comics/{id}', function ($id) {
+    $comics = config('comics');
+    if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        // ddd($comics);
+
+        // return "Hai cliccato il fumetto con id: $id";
+        return view('comic', compact('comic'));
+    } else {
+        abort(404);
+    }
 })->name('comic');
+
+/* Route::get('/comics', function () {
+    $comics = config('comics');
+    return view('comics.index');
+})->name('comic'); */
