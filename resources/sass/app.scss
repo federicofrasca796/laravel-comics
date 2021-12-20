@@ -210,10 +210,25 @@ background-position: top center;
             text-transform: uppercase;
             font-weight: 800;
         }
-        .buy_info{
+        .buy_info > *{
+            font-weight: 800;
             background: #55BA59;
-            color: #fff;
-            padding: 1rem .5rem;
+            border: 1px solid #418b44;
+            color: #B4FC9C;
+            padding: 1rem 1rem;
+        }
+        .comic_more{
+            color: $fc_gray90;
+            font-weight: 500;
+            line-height: 1.7rem;
+        }
+    }
+    .adv{
+        h5{
+            font-weight: 800;
+            color: $fc_gray90;
+            text-transform: uppercase;
+            text-align: end;
         }
     }
 }

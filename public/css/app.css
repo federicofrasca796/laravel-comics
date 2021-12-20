@@ -11444,10 +11444,23 @@ h1 {
   text-transform: uppercase;
   font-weight: 800;
 }
-#single_comic .comic_info .buy_info {
+#single_comic .comic_info .buy_info > * {
+  font-weight: 800;
   background: #55BA59;
-  color: #fff;
-  padding: 1rem 0.5rem;
+  border: 1px solid #418b44;
+  color: #B4FC9C;
+  padding: 1rem 1rem;
+}
+#single_comic .comic_info .comic_more {
+  color: #464646;
+  font-weight: 500;
+  line-height: 1.7rem;
+}
+#single_comic .adv h5 {
+  font-weight: 800;
+  color: #464646;
+  text-transform: uppercase;
+  text-align: end;
 }
 
 #site_footer .footer_links {
